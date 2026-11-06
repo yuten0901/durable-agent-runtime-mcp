@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "execution_mode": "offline_fixture_only",
+  "summary": {
+    "scenarios": 3,
+    "passed": 3,
+    "failed": 0
+  },
+  "scenarios": [
+    {
+      "scenario": "normal-multi-agent-run",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "completed_steps": 5,
+      "retries": 0,
+      "trace_events": 12
+    },
+    {
+      "scenario": "actor-retry-and-recovery",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "completed_steps": 5,
+      "retries": 2,
+      "trace_events": 16
+    },
+    {
+      "scenario": "sandbox-path-escape-denied",
+      "expected": "failed",
+      "actual": "failed",
+      "passed": true,
+      "completed_steps": 4,
+      "retries": 0,
+      "trace_events": 12
+    }
+  ],
+  "mcp": {
+    "protocol_version": "2025-06-18",
+    "summary": {
+      "checks": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "checks": [
+      {
+        "check": "handshake_blocks_tools_until_initialized",
+        "passed": true
+      },
+      {
+        "check": "new_server_resumes_without_rerunning_checkpoint",
+        "passed": true
+      },
+      {
+        "check": "tool_schema_rejects_additional_properties",
+        "passed": true
+      },
+      {
+        "check": "changed_fixture_is_rejected_fail_closed",
+        "passed": true
+      }
+    ]
+  },
+  "limitations": [
+    "Apify互換境界はローカルadapterであり、実Apify actorを実行していない",
+    "SQLite checkpointを検証し、Cloudflare D1との互換性や本番migrationは未検証",
+    "Next.js UI、Cloudflare Workers、外部LLM、外部deploymentは実装・公開していない",
+    "中断・runtime再構築・stale回収は同一process内の決定的試験であり、OS process終了や実時間soak testではない",
+    "MCPはローカルstdioとprotocol version 2025-06-18の境界だけを検証し、実Client互換性は未検証",
+    "MCPのremote transport、認証、multi-tenant authorization、rate limitは未実装",
+    "fixture snapshotとSHA-256をrunへ固定し変更後resumeを拒否するが、外部data sourceの内容固定は未検証"
+  ]
+}

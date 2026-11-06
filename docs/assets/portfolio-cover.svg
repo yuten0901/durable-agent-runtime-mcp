@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750" role="img" aria-labelledby="title desc">
+  <title id="title">Durable AI Agent Runtime portfolio cover</title>
+  <desc id="desc">Checkpointed MCP workflow with bounded retries and auditable traces.</desc>
+  <rect width="1000" height="750" rx="28" fill="#0f172a"/>
+  <text x="55" y="78" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">Durable AI Agent Runtime</text>
+  <text x="55" y="120" fill="#7dd3fc" font-family="Segoe UI, Arial, sans-serif" font-size="22">MCP tools · checkpoints · safe recovery</text>
+  <image href="runtime-flow.svg" x="35" y="155" width="930" height="376" preserveAspectRatio="xMidYMid meet"/>
+  <rect x="55" y="585" width="240" height="62" rx="31" fill="#172554" stroke="#60a5fa" stroke-width="2"/>
+  <text x="175" y="624" fill="#dbeafe" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600">MCP tool boundary</text>
+  <rect x="325" y="585" width="280" height="62" rx="31" fill="#052e2b" stroke="#34d399" stroke-width="2"/>
+  <text x="465" y="624" fill="#d1fae5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600">Checkpointed workflow</text>
+  <rect x="635" y="585" width="310" height="62" rx="31" fill="#3b1d0d" stroke="#fb923c" stroke-width="2"/>
+  <text x="790" y="624" fill="#ffedd5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600">Auditable failure handling</text>
+  <text x="55" y="704" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="18">Offline, reproducible Python work sample</text>
+</svg>

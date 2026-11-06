@@ -1,0 +1,16 @@
+{
+  "fixture_id": "sandbox-path-escape-denied",
+  "run_id": "run-sandbox-003",
+  "expected_status": "failed",
+  "sources": {
+    "registry": [
+      {
+        "title": "SafeCo company update",
+        "url": "https://example.test/registry/safeco"
+      }
+    ],
+    "news": []
+  },
+  "transient_failures": {},
+  "output_path": "../escape.json"
+}

@@ -1,0 +1,25 @@
+{
+  "fixture_id": "packaged-demo-run",
+  "run_id": "run-packaged-demo-001",
+  "expected_status": "completed",
+  "sources": {
+    "registry": [
+      {
+        "title": "ExampleCo appoints new operations director",
+        "url": "https://example.test/registry/exampleco-director"
+      }
+    ],
+    "news": [
+      {
+        "title": "ExampleCo appoints new operations director",
+        "url": "https://example.test/registry/exampleco-director"
+      },
+      {
+        "title": "SampleCo launches new analytics product",
+        "url": "https://example.test/news/sampleco-launch"
+      }
+    ]
+  },
+  "transient_failures": {},
+  "output_path": "demo-report.json"
+}

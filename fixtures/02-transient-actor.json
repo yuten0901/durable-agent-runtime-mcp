@@ -1,0 +1,16 @@
+{
+  "fixture_id": "actor-retry-and-recovery",
+  "run_id": "run-retry-002",
+  "expected_status": "completed",
+  "sources": {
+    "registry": [
+      {
+        "title": "RetryCo appoints a new director",
+        "url": "https://example.test/registry/retryco"
+      }
+    ],
+    "news": []
+  },
+  "transient_failures": {"registry": 2},
+  "output_path": "retry-report.json"
+}
